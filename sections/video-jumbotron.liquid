@@ -11,7 +11,7 @@
   }}
   <div
     class="w-full h-full absolute inset-0 flex flex-col justify-center"
-    style="gap: {{ section.settings.image_gap }}px"
+    style="gap: {{ section.settings.image_gap }}px; padding-left: {{ section.settings.left_padding }}px"
   >
     {% assign image1_width = section.settings.image1_height | times: section.settings.image1.aspect_ratio %}
     {{ section.settings.image1 | image_url: width: image1_width | image_tag: width: image1_width }}
@@ -73,6 +73,16 @@
       "default": 40,
       "unit": "px",
       "label": "Image Gap"
+    },
+    {
+      "type": "range",
+      "id": "left_padding",
+      "min": 0,
+      "max": 400,
+      "step": 4,
+      "default": 16,
+      "unit": "px",
+      "label": "Left Padding"
     }
   ],
   "presets": [
