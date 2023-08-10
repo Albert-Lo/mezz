@@ -1,0 +1,85 @@
+{%- style -%}
+  .bg-video video {
+    width: 100%;
+  }
+{%- endstyle -%}
+
+<div class="w-full bg-video relative">
+  {{
+    section.settings.video
+    | video_tag: image_size: '1440px', loop: true, controls: false, muted: true, autoplay: true
+  }}
+  <div
+    class="w-full h-full absolute inset-0 flex flex-col justify-center"
+    style="gap: {{ section.settings.image_gap }}px"
+  >
+    {% assign image1_width = section.settings.image1_height | times: section.settings.image1.aspect_ratio %}
+    {{ section.settings.image1 | image_url: width: image1_width | image_tag: width: image1_width }}
+    {% assign image2_width = section.settings.image2_height | times: section.settings.image2.aspect_ratio %}
+    {{ section.settings.image2 | image_url: width: image2_width | image_tag: width: image2_width }}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "t:sections.video_jumbotron.name",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "video",
+      "id": "video",
+      "label": "t:sections.video.settings.video.label"
+    },
+    {
+      "type": "image_picker",
+      "id": "image1",
+      "label": "Image 1"
+    },
+    {
+      "type": "range",
+      "id": "image1_height",
+      "min": 12,
+      "max": 400,
+      "step": 4,
+      "default": 200,
+      "unit": "px",
+      "label": "Image 1 Height"
+    },
+    {
+      "type": "image_picker",
+      "id": "image2",
+      "label": "Image 2"
+    },
+    {
+      "type": "range",
+      "id": "image2_height",
+      "min": 12,
+      "max": 400,
+      "step": 4,
+      "default": 200,
+      "unit": "px",
+      "label": "Image 2 Height"
+    },
+    {
+      "type": "range",
+      "id": "image_gap",
+      "min": 0,
+      "max": 200,
+      "step": 4,
+      "default": 40,
+      "unit": "px",
+      "label": "Image Gap"
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:sections.video_jumbotron.name",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}
