@@ -1,6 +1,57 @@
 {
   "sections": {
+    "93086462-12a3-4b1a-be37-438aa4d70d7e": {
+      "type": "video-jumbotron",
+      "settings": {
+        "video": "shopify:\/\/files\/videos\/IG003 v2.mp4",
+        "image1": "shopify:\/\/shop_images\/Mezzanine_Makers_-_Logo_-_Dark_Steel_CMYK.svg",
+        "image1_height": 200,
+        "image2": "shopify:\/\/shop_images\/Mezzanine_Makers_-_Logo_-_Dark_Steel_CMYK.svg",
+        "image2_height": 200,
+        "image_gap": 40,
+        "left_padding": 16
+      }
+    },
+    "42585413-0d19-44c9-a3c3-c5e032727ca4": {
+      "type": "product-showcase",
+      "blocks": {
+        "751b7f9a-681f-4add-bfa7-a0cb891f1ea4": {
+          "type": "sku",
+          "settings": {
+            "title": "Herbal Tonic Water",
+            "image": "shopify:\/\/shop_images\/Product_Slideshow_-_HTW.jpg",
+            "url": "shopify:\/\/products\/extra-herbal-tonic-water"
+          }
+        },
+        "698ff991-95f5-4629-a34b-28fd2e58a53d": {
+          "type": "sku",
+          "settings": {
+            "title": "Herbal Tonic Water",
+            "image": "shopify:\/\/shop_images\/Product_Slideshow_-_HTW.jpg",
+            "url": "shopify:\/\/products\/citrus-daily-water"
+          }
+        },
+        "8793348b-14ba-482f-9911-797de6ae6899": {
+          "type": "sku",
+          "settings": {
+            "title": "Herbal Tonic Water",
+            "image": "shopify:\/\/shop_images\/Product_Slideshow_-_HTW.jpg",
+            "url": "shopify:\/\/products\/extra-herbal-tonic-water"
+          }
+        }
+      },
+      "block_order": [
+        "751b7f9a-681f-4add-bfa7-a0cb891f1ea4",
+        "698ff991-95f5-4629-a34b-28fd2e58a53d",
+        "8793348b-14ba-482f-9911-797de6ae6899"
+      ],
+      "settings": {
+        "title": "Premium Craft Sodas"
+      }
+    }
   },
   "order": [
+    "93086462-12a3-4b1a-be37-438aa4d70d7e",
+    "42585413-0d19-44c9-a3c3-c5e032727ca4"
   ]
 }
