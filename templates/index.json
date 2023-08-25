@@ -55,11 +55,128 @@
         "text": "Find our products near you",
         "url": "shopify:\/\/pages\/store-locator"
       }
+    },
+    "d5e9b83e-d332-4253-a4fe-419f35572f13": {
+      "type": "feature",
+      "blocks": {
+        "template--20418744779033__d5e9b83e-d332-4253-a4fe-419f35572f13-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "Farm to Soda"
+          }
+        },
+        "template--20418744779033__d5e9b83e-d332-4253-a4fe-419f35572f13-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We use natural ingredients from local farms  to create our premium craft sodas,  because flavours matter.<\/p>"
+          }
+        },
+        "template--20418744779033__d5e9b83e-d332-4253-a4fe-419f35572f13-button-1": {
+          "type": "button",
+          "settings": {
+            "label": "Read More",
+            "url": "shopify:\/\/pages\/citrus-daily-water"
+          }
+        }
+      },
+      "block_order": [
+        "template--20418744779033__d5e9b83e-d332-4253-a4fe-419f35572f13-heading-1",
+        "template--20418744779033__d5e9b83e-d332-4253-a4fe-419f35572f13-text-1",
+        "template--20418744779033__d5e9b83e-d332-4253-a4fe-419f35572f13-button-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Featured_Blog_Image.png",
+        "image_width": 42,
+        "image_order": "first"
+      }
+    },
+    "be5382c8-3a2e-460a-b8fd-90180f3ee1d0": {
+      "type": "circles",
+      "blocks": {
+        "0baa508c-04ec-4e46-8bfc-5eb32e1a9f90": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/243583026_117694720655432_3853500947249525298_n.png"
+          }
+        },
+        "78064cf4-4871-4be3-9d28-f62051edd1c1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/unnamed.jpg"
+          }
+        },
+        "7bf321bf-f66f-486f-beb2-e318588aff32": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/3.png"
+          }
+        },
+        "a9c9c69e-560b-476f-98f9-3b01ffa34738": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/1.png"
+          }
+        },
+        "c0fe51d0-d6a9-410b-a332-481dd4c0ae72": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/betterme.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "0baa508c-04ec-4e46-8bfc-5eb32e1a9f90",
+        "78064cf4-4871-4be3-9d28-f62051edd1c1",
+        "7bf321bf-f66f-486f-beb2-e318588aff32",
+        "a9c9c69e-560b-476f-98f9-3b01ffa34738",
+        "c0fe51d0-d6a9-410b-a332-481dd4c0ae72"
+      ],
+      "settings": {
+        "title": "Media features",
+        "url": "shopify:\/\/pages\/media"
+      }
+    },
+    "8fd8ad37-51c0-4235-b282-f2154ba41b64": {
+      "type": "feature",
+      "blocks": {
+        "template--20418744779033__8fd8ad37-51c0-4235-b282-f2154ba41b64-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "Mix it up"
+          }
+        },
+        "template--20418744779033__8fd8ad37-51c0-4235-b282-f2154ba41b64-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Our sodas are easy and elegant mixers\u0003 for you to show off your cocktail skills at \u0003 your next party.<\/p>"
+          }
+        },
+        "template--20418744779033__8fd8ad37-51c0-4235-b282-f2154ba41b64-button-1": {
+          "type": "button",
+          "settings": {
+            "label": "Teach me",
+            "url": "shopify:\/\/pages\/the-makers"
+          }
+        }
+      },
+      "block_order": [
+        "template--20418744779033__8fd8ad37-51c0-4235-b282-f2154ba41b64-heading-1",
+        "template--20418744779033__8fd8ad37-51c0-4235-b282-f2154ba41b64-text-1",
+        "template--20418744779033__8fd8ad37-51c0-4235-b282-f2154ba41b64-button-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Featured_Blog_Image.png",
+        "image_width": 42,
+        "image_order": "last"
+      }
     }
   },
   "order": [
     "93086462-12a3-4b1a-be37-438aa4d70d7e",
     "42585413-0d19-44c9-a3c3-c5e032727ca4",
-    "b4d353e3-dcaf-4bf1-8b41-9ad9cfbd195b"
+    "b4d353e3-dcaf-4bf1-8b41-9ad9cfbd195b",
+    "d5e9b83e-d332-4253-a4fe-419f35572f13",
+    "be5382c8-3a2e-460a-b8fd-90180f3ee1d0",
+    "8fd8ad37-51c0-4235-b282-f2154ba41b64"
   ]
 }
