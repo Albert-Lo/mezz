@@ -1,7 +1,7 @@
 {
   "current": {
-    "logo": "shopify:\/\/shop_images\/Mezzanine_Makers_-_Favicon.png",
-    "logo_width": 80,
+    "logo": "shopify:\/\/shop_images\/MM_icon_home_button.svg",
+    "logo_width": 40,
     "dark_static_nose_background": "shopify:\/\/shop_images\/Dark_Noise_Half_1440x1440_HR.jpg",
     "type_header_font": "archivo_n4",
     "heading_scale": 100,
@@ -133,7 +133,8 @@
     "color_schemes": {
       "default": {
         "settings": {
-          "color_base_100": "#222",
+          "color_base_100": "#222222",
+          "color_content": "#FFFFFF",
           "background": "#ffffff",
           "background_gradient": "",
           "text": "#121212",
