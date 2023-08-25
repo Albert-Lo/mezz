@@ -48,10 +48,18 @@
       "settings": {
         "title": "Premium Craft Sodas"
       }
+    },
+    "b4d353e3-dcaf-4bf1-8b41-9ad9cfbd195b": {
+      "type": "section-link",
+      "settings": {
+        "text": "Find our products near you",
+        "url": "shopify:\/\/pages\/store-locator"
+      }
     }
   },
   "order": [
     "93086462-12a3-4b1a-be37-438aa4d70d7e",
-    "42585413-0d19-44c9-a3c3-c5e032727ca4"
+    "42585413-0d19-44c9-a3c3-c5e032727ca4",
+    "b4d353e3-dcaf-4bf1-8b41-9ad9cfbd195b"
   ]
 }
