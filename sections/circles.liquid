@@ -1,0 +1,54 @@
+<a href="{{ section.settings.url }}" class="block p-12 border-t-[2px] border-content">
+  <div class="font-bold text-4xl">
+    {{ section.settings.title }}
+  </div>
+  <div class="grid grid-cols-5 gap-10 mt-8">
+    {%- for image in section.blocks -%}
+      <div class="w-full aspect-square rounded-full overflow-hidden border-[2px] border-content">
+        <img class="w-full h-full object-cover" src="{{ image.settings.image | image_url: width: 240 }}">
+      </div>
+    {%- endfor -%}
+  </div>
+</a>
+
+{% schema %}
+{
+  "name": "Circles",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    },
+    {
+      "type": "url",
+      "id": "url",
+      "label": "URL"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "image",
+      "name": "Image",
+      "limit": 5,
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Circles"
+    }
+  ]
+}
+{% endschema %}

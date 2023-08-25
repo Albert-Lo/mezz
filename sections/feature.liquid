@@ -1,0 +1,145 @@
+<div class="border-t-[2px] border-content flex items-stretch bg-base-100 {% if section.settings.image_order == 'last' %}flex-row-reverse{% endif %}">
+  <div
+    class="img-container {% if section.settings.image_order == 'first' %}border-r-[2px]{% else %}border-l-[2px]{% endif %} border-content"
+    style="width: {{ section.settings.image_width }}%"
+  >
+    {{ section.settings.image | image_url: width: 600 | image_tag }}
+  </div>
+  <div class="flex-1 flex flex-col justify-center px-12 gap-10">
+    {%- for block in section.blocks -%}
+      {% case block.type %}
+        {%- when 'heading' -%}
+          <h2 {{ block.shopify_attributes }} class="text-6xl">
+            {{ block.settings.heading }}
+          </h2>
+        {%- when 'text' -%}
+          <div {{ block.shopify_attributes }} class="text-2xl">
+            {{ block.settings.text }}
+          </div>
+        {%- when 'button' -%}
+          {%- if block.settings.label != blank -%}
+            <div>
+              <a
+                {% if block.settings.url == blank %}
+                  role="link" aria-disabled="true"
+                {% else %}
+                  href="{{ block.settings.url }}"
+                {% endif %}
+                class="btn btn-lg"
+                {{ block.shopify_attributes }}
+              >
+                {{ block.settings.label | escape }}
+                {% render 'icon-arrow-right', class: 'w-6 h-6' %}
+              </a>
+            </div>
+          {%- endif -%}
+      {% endcase %}
+    {%- endfor -%}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Feature",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "blocks": [
+    {
+      "type": "heading",
+      "name": "Heading",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "inline_richtext",
+          "id": "heading",
+          "default": "Heading",
+          "label": "Heading"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "name": "Content",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "richtext",
+          "id": "text",
+          "default": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris bibendum elit non erat molestie ullamcorper at at velit.</p>",
+          "label": "Content"
+        }
+      ]
+    },
+    {
+      "type": "button",
+      "name": "Button",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "label",
+          "default": "Click here",
+          "label": "Label"
+        },
+        {
+          "type": "url",
+          "id": "url",
+          "label": "URL"
+        }
+      ]
+    }
+  ],
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "range",
+      "id": "image_width",
+      "min": 1,
+      "max": 100,
+      "step": 1,
+      "default": 42,
+      "unit": "%",
+      "label": "Image Width %"
+    },
+    {
+      "type": "radio",
+      "id": "image_order",
+      "label": "Image Order",
+      "options": [
+        {
+          "value": "first",
+          "label": "First"
+        },
+        {
+          "value": "last",
+          "label": "Last"
+        }
+      ],
+      "default": "first"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Feature",
+      "blocks": [
+        {
+          "type": "heading"
+        },
+        {
+          "type": "text"
+        },
+        {
+          "type": "button"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

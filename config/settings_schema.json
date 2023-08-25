@@ -62,6 +62,18 @@
         "definition": [
           {
             "type": "color",
+            "id": "color_base_100",
+            "label": "Base Color (Default Background)",
+            "default": "#222"
+          },
+          {
+            "type": "color",
+            "id": "color_content",
+            "label": "Cotent Color",
+            "default": "#FFFFFF"
+          },
+          {
+            "type": "color",
             "id": "background",
             "label": "t:settings_schema.colors.settings.background.label",
             "default": "#FFFFFF"

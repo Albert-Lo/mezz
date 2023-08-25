@@ -41,9 +41,12 @@
 
     <script src="{{ 'components.js' | asset_url }}" async></script>
 
+    {% assign scheme = settings.color_schemes | first %}
     {% style %}
       :root {
         --font-body-family: {{ settings.type_body_font.family }}, {{ settings.type_body_font.fallback_families }};
+        --color-base-100: {{ scheme.settings.color_base_100 }};
+        --color-content: {{ scheme.settings.color_content }};
       }
 
       {{ settings.type_body_font | font_face: font_display: 'swap' }}
@@ -74,18 +77,6 @@
   </head>
 
   <body class="{% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %}">
-    {%- if settings.dark_static_nose_background != blank -%}
-      <div
-        class="absolute inset-0 z-[-1] bg-repeat bg-center"
-        style="
-          background-image:url({{
-            settings.dark_static_nose_background
-            | image_url: width: 1440
-          }})
-        "
-      ></div>
-    {%- endif -%}
-
     {% comment %}
       <a class="skip-to-content-link button visually-hidden" href="#MainContent">
         {{ 'accessibility.skip_to_text' | t }}
@@ -96,13 +87,29 @@
       {%- render 'cart-drawer' -%}
     {%- endif -%}
 
-    {% sections 'header-group' %}
+    <div class="w-screen bg-base-100 text-content z-[-1] relative">
+      <div class="container mx-auto border-[2px] relative">
+        {%- if settings.dark_static_nose_background != blank -%}
+          <div
+            class="absolute inset-0 z-[-1] bg-repeat bg-center"
+            style="
+              background-image:url({{
+                settings.dark_static_nose_background
+                | image_url: width: 1440
+              }})
+            "
+          ></div>
+        {%- endif -%}
 
-    <main id="MainContent" class="w-screen min-h-screen" role="main" tabindex="-1">
-      {{ content_for_layout }}
-    </main>
+        {% sections 'header-group' %}
 
-    {% sections 'footer-group' %}
+        <main id="MainContent" role="main" tabindex="-1" class="border-t-[2px] border-b-[2px] border-content">
+          {{ content_for_layout }}
+        </main>
+
+        {% sections 'footer-group' %}
+      </div>
+    </div>
 
     <ul hidden>
       <li id="a11y-refresh-page-message">{{ 'accessibility.refresh_page' | t }}</li>

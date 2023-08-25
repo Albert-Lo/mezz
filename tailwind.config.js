@@ -7,7 +7,12 @@ module.exports = {
     "./components/**/*.svelte",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'base-100': 'var(--color-base-100)',
+        'content': 'var(--color-content)',
+      }
+    },
   },
   plugins: [],
 }

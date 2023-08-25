@@ -1,0 +1,35 @@
+<a
+  class="block py-6 text-center text-lg font-bold border-t-[2px] border-content flex justify-center gap-4"
+  href="{{ section.settings.url }}"
+>
+  {{- section.settings.text -}}
+  {% render 'icon-arrow-right', class: 'w-6 h-6' %}
+</a>
+
+{% schema %}
+{
+  "name": "Section Link",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "text",
+      "id": "text",
+      "label": "Text"
+    },
+    {
+      "type": "url",
+      "id": "url",
+      "label": "URL"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Section Link"
+    }
+  ]
+}
+{% endschema %}

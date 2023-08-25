@@ -1,0 +1,64 @@
+<div class="p-12 bg-base-100 text-content border-t-[2px] border-content">
+  <div class="font-bold text-4xl">
+    {{ section.settings.title }}
+  </div>
+  <div class="grid grid-cols-3 gap-10 mt-8">
+    {%- for product in section.blocks -%}
+      <a href="{{ product.settings.url }}">
+        <div class="border-[2px] border-content">
+          {{ product.settings.image | image_url: width: 600 | image_tag }}
+        </div>
+        <div class="font-bold text-center text-xl mt-5">
+          {{ product.settings.title }}
+        </div>
+      </a>
+    {%- endfor -%}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Product Showcase",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "sku",
+      "name": "Product",
+      "limit": 3,
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "url",
+          "id": "url",
+          "label": "URL"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Product Showcase"
+    }
+  ]
+}
+{% endschema %}

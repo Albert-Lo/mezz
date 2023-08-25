@@ -1,3 +1,22 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.img-container > img {
+  width: 100%;
+}
+
+.btn {
+  @apply inline-flex gap-1 items-center;
+  @apply px-5 py-3;
+  @apply border-[2px] border-content;
+  @apply cursor-pointer;
+  @apply leading-none;
+  @apply hover:bg-content hover:text-base-100;
+}
+
+.btn-lg {
+  @apply text-lg;
+  @apply leading-none;
+  @apply gap-2;
+}
