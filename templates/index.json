@@ -19,24 +19,24 @@
           "type": "sku",
           "settings": {
             "title": "Herbal Tonic Water",
-            "image": "shopify:\/\/shop_images\/Product_Slideshow_-_HTW.jpg",
-            "url": "shopify:\/\/products\/extra-herbal-tonic-water"
+            "image": "shopify:\/\/shop_images\/Product_Slideshow_v2-HTW.jpg",
+            "url": "shopify:\/\/products\/herbal-tonic-water-草本湯力水"
           }
         },
         "698ff991-95f5-4629-a34b-28fd2e58a53d": {
           "type": "sku",
           "settings": {
-            "title": "Herbal Tonic Water",
-            "image": "shopify:\/\/shop_images\/Product_Slideshow_-_HTW.jpg",
-            "url": "shopify:\/\/products\/citrus-daily-water"
+            "title": "Lemon Iron Buddha Sparkling Tea",
+            "image": "shopify:\/\/shop_images\/Product_Slideshow_v2-LIB.jpg",
+            "url": "shopify:\/\/products\/lemon-iron-buddha-sparkling-tea-有汽香水檸檬鐵觀音"
           }
         },
         "8793348b-14ba-482f-9911-797de6ae6899": {
           "type": "sku",
           "settings": {
-            "title": "Herbal Tonic Water",
-            "image": "shopify:\/\/shop_images\/Product_Slideshow_-_HTW.jpg",
-            "url": "shopify:\/\/products\/extra-herbal-tonic-water"
+            "title": "Sparkling Lemongrass Green Tea",
+            "image": "shopify:\/\/shop_images\/Product_Slideshow_v2-LGT.jpg",
+            "url": "shopify:\/\/products\/sparkling-lemongrass-green-tea-有汽香茅綠茶"
           }
         }
       },
@@ -52,8 +52,8 @@
     "b4d353e3-dcaf-4bf1-8b41-9ad9cfbd195b": {
       "type": "section-link",
       "settings": {
-        "text": "Find our products near you",
-        "url": "shopify:\/\/pages\/store-locator"
+        "text": "See all products",
+        "url": "shopify:\/\/pages\/drinks"
       }
     },
     "d5e9b83e-d332-4253-a4fe-419f35572f13": {
@@ -62,7 +62,7 @@
         "template--20418744779033__d5e9b83e-d332-4253-a4fe-419f35572f13-heading-1": {
           "type": "heading",
           "settings": {
-            "heading": "Farm to Soda"
+            "heading": "<strong>Farm to Soda<\/strong>"
           }
         },
         "template--20418744779033__d5e9b83e-d332-4253-a4fe-419f35572f13-text-1": {
@@ -142,13 +142,13 @@
         "template--20418744779033__8fd8ad37-51c0-4235-b282-f2154ba41b64-heading-1": {
           "type": "heading",
           "settings": {
-            "heading": "Mix it up"
+            "heading": "<strong>Mix it up<\/strong>"
           }
         },
         "template--20418744779033__8fd8ad37-51c0-4235-b282-f2154ba41b64-text-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Our sodas are easy and elegant mixers\u0003 for you to show off your cocktail skills at \u0003 your next party.<\/p>"
+            "text": "<p>Our sodas are easy and elegant mixers for your to show off your cocktail skills at your next party.<\/p>"
           }
         },
         "template--20418744779033__8fd8ad37-51c0-4235-b282-f2154ba41b64-button-1": {
