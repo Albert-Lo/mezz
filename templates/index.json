@@ -1,6 +1,182 @@
 {
   "sections": {
+    "93086462-12a3-4b1a-be37-438aa4d70d7e": {
+      "type": "video-jumbotron",
+      "settings": {
+        "video": "shopify:\/\/files\/videos\/IG003 v2.mp4",
+        "image1": "shopify:\/\/shop_images\/Mezzanine_Makers_-_Logo_-_Dark_Steel_CMYK.svg",
+        "image1_height": 200,
+        "image2": "shopify:\/\/shop_images\/Mezzanine_Makers_-_Logo_-_Dark_Steel_CMYK.svg",
+        "image2_height": 200,
+        "image_gap": 40,
+        "left_padding": 16
+      }
+    },
+    "42585413-0d19-44c9-a3c3-c5e032727ca4": {
+      "type": "product-showcase",
+      "blocks": {
+        "751b7f9a-681f-4add-bfa7-a0cb891f1ea4": {
+          "type": "sku",
+          "settings": {
+            "title": "Herbal Tonic Water",
+            "image": "shopify:\/\/shop_images\/Product_Slideshow_v2-HTW.jpg",
+            "url": "shopify:\/\/products\/herbal-tonic-water-草本湯力水"
+          }
+        },
+        "698ff991-95f5-4629-a34b-28fd2e58a53d": {
+          "type": "sku",
+          "settings": {
+            "title": "Lemon Iron Buddha Sparkling Tea",
+            "image": "shopify:\/\/shop_images\/Product_Slideshow_v2-LIB.jpg",
+            "url": "shopify:\/\/products\/lemon-iron-buddha-sparkling-tea-有汽香水檸檬鐵觀音"
+          }
+        },
+        "8793348b-14ba-482f-9911-797de6ae6899": {
+          "type": "sku",
+          "settings": {
+            "title": "Sparkling Lemongrass Green Tea",
+            "image": "shopify:\/\/shop_images\/Product_Slideshow_v2-LGT.jpg",
+            "url": "shopify:\/\/products\/sparkling-lemongrass-green-tea-有汽香茅綠茶"
+          }
+        }
+      },
+      "block_order": [
+        "751b7f9a-681f-4add-bfa7-a0cb891f1ea4",
+        "698ff991-95f5-4629-a34b-28fd2e58a53d",
+        "8793348b-14ba-482f-9911-797de6ae6899"
+      ],
+      "settings": {
+        "title": "Premium Craft Sodas"
+      }
+    },
+    "b4d353e3-dcaf-4bf1-8b41-9ad9cfbd195b": {
+      "type": "section-link",
+      "settings": {
+        "text": "See all products",
+        "url": "shopify:\/\/pages\/drinks"
+      }
+    },
+    "d5e9b83e-d332-4253-a4fe-419f35572f13": {
+      "type": "feature",
+      "blocks": {
+        "template--20418744779033__d5e9b83e-d332-4253-a4fe-419f35572f13-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>Farm to Soda<\/strong>"
+          }
+        },
+        "template--20418744779033__d5e9b83e-d332-4253-a4fe-419f35572f13-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We use natural ingredients from local farms  to create our premium craft sodas,  because flavours matter.<\/p>"
+          }
+        },
+        "template--20418744779033__d5e9b83e-d332-4253-a4fe-419f35572f13-button-1": {
+          "type": "button",
+          "settings": {
+            "label": "Read More",
+            "url": "shopify:\/\/pages\/citrus-daily-water"
+          }
+        }
+      },
+      "block_order": [
+        "template--20418744779033__d5e9b83e-d332-4253-a4fe-419f35572f13-heading-1",
+        "template--20418744779033__d5e9b83e-d332-4253-a4fe-419f35572f13-text-1",
+        "template--20418744779033__d5e9b83e-d332-4253-a4fe-419f35572f13-button-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Featured_Blog_Image.png",
+        "image_width": 42,
+        "image_order": "first"
+      }
+    },
+    "be5382c8-3a2e-460a-b8fd-90180f3ee1d0": {
+      "type": "circles",
+      "blocks": {
+        "0baa508c-04ec-4e46-8bfc-5eb32e1a9f90": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/243583026_117694720655432_3853500947249525298_n.png"
+          }
+        },
+        "78064cf4-4871-4be3-9d28-f62051edd1c1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/unnamed.jpg"
+          }
+        },
+        "7bf321bf-f66f-486f-beb2-e318588aff32": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/3.png"
+          }
+        },
+        "a9c9c69e-560b-476f-98f9-3b01ffa34738": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/1.png"
+          }
+        },
+        "c0fe51d0-d6a9-410b-a332-481dd4c0ae72": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/betterme.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "0baa508c-04ec-4e46-8bfc-5eb32e1a9f90",
+        "78064cf4-4871-4be3-9d28-f62051edd1c1",
+        "7bf321bf-f66f-486f-beb2-e318588aff32",
+        "a9c9c69e-560b-476f-98f9-3b01ffa34738",
+        "c0fe51d0-d6a9-410b-a332-481dd4c0ae72"
+      ],
+      "settings": {
+        "title": "Media features",
+        "url": "shopify:\/\/pages\/media"
+      }
+    },
+    "8fd8ad37-51c0-4235-b282-f2154ba41b64": {
+      "type": "feature",
+      "blocks": {
+        "template--20418744779033__8fd8ad37-51c0-4235-b282-f2154ba41b64-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>Mix it up<\/strong>"
+          }
+        },
+        "template--20418744779033__8fd8ad37-51c0-4235-b282-f2154ba41b64-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Our sodas are easy and elegant mixers for your to show off your cocktail skills at your next party.<\/p>"
+          }
+        },
+        "template--20418744779033__8fd8ad37-51c0-4235-b282-f2154ba41b64-button-1": {
+          "type": "button",
+          "settings": {
+            "label": "Teach me",
+            "url": "shopify:\/\/pages\/the-makers"
+          }
+        }
+      },
+      "block_order": [
+        "template--20418744779033__8fd8ad37-51c0-4235-b282-f2154ba41b64-heading-1",
+        "template--20418744779033__8fd8ad37-51c0-4235-b282-f2154ba41b64-text-1",
+        "template--20418744779033__8fd8ad37-51c0-4235-b282-f2154ba41b64-button-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Featured_Blog_Image.png",
+        "image_width": 42,
+        "image_order": "last"
+      }
+    }
   },
   "order": [
+    "93086462-12a3-4b1a-be37-438aa4d70d7e",
+    "42585413-0d19-44c9-a3c3-c5e032727ca4",
+    "b4d353e3-dcaf-4bf1-8b41-9ad9cfbd195b",
+    "d5e9b83e-d332-4253-a4fe-419f35572f13",
+    "be5382c8-3a2e-460a-b8fd-90180f3ee1d0",
+    "8fd8ad37-51c0-4235-b282-f2154ba41b64"
   ]
 }

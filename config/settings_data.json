@@ -1,16 +1,17 @@
 {
   "current": {
-    "logo": "shopify:\/\/shop_images\/Mezzanine_Makers_-_Favicon.png",
-    "logo_width": 80,
+    "logo": "shopify:\/\/shop_images\/MM_icon_home_button.svg",
+    "logo_width": 40,
     "dark_static_nose_background": "shopify:\/\/shop_images\/Dark_Noise_Half_1440x1440_HR.jpg",
-    "type_header_font": "archivo_n4",
+    "type_header_font": "helvetica_n7",
     "heading_scale": 100,
-    "type_body_font": "archivo_n4",
+    "type_body_font": "helvetica_n4",
     "body_scale": 100,
     "page_width": 1200,
     "spacing_sections": 0,
     "spacing_grid_horizontal": 8,
     "spacing_grid_vertical": 8,
+    "animations_hover_elements": "default",
     "buttons_border_thickness": 1,
     "buttons_border_opacity": 100,
     "buttons_radius": 0,
@@ -133,7 +134,8 @@
     "color_schemes": {
       "default": {
         "settings": {
-          "color_base_100": "#222",
+          "color_base_100": "#222222",
+          "color_content": "#ffffff",
           "background": "#ffffff",
           "background_gradient": "",
           "text": "#121212",
