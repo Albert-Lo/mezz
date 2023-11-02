@@ -9,12 +9,12 @@
   {% render 'quantity-input' variant: variant %}
 {% endcomment %}
 
-<quantity-input class="quantity cart-quantity">
+<quantity-input>
   <button class="quantity__button no-js-hidden" name="minus" type="button">
     <span class="visually-hidden">
       {{- 'products.product.quantity.decrease' | t: product: variant.title | escape -}}
     </span>
-    {% render 'icon-minus' %}
+    -
   </button>
   <input
     class="quantity__input"
@@ -38,6 +38,6 @@
     <span class="visually-hidden">
       {{- 'products.product.quantity.increase' | t: product: variant.title | escape -}}
     </span>
-    {% render 'icon-plus' %}
+    +
   </button>
 </quantity-input>

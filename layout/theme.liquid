@@ -35,6 +35,9 @@
 
     {% render 'meta-tags' %}
 
+    <script src="{{ 'constants.js' | asset_url }}" defer="defer"></script>
+    <script src="{{ 'pubsub.js' | asset_url }}" defer="defer"></script>
+    <script src="{{ 'global.js' | asset_url }}" defer="defer"></script>
     {{ content_for_header }}
 
     {{ 'tw.css' | asset_url | stylesheet_tag }}
@@ -44,9 +47,15 @@
     {% assign scheme = settings.color_schemes | first %}
     {% style %}
       :root {
-        --font-body-family: {{ settings.type_body_font.family }}, {{ settings.type_body_font.fallback_families }};
-        --color-base-100: {{ scheme.settings.color_base_100 }};
-        --color-content: {{ scheme.settings.color_content }};
+        {%- if template.name == 'product' -%}
+          --font-body-family: {{ settings.type_body_font.family }}, {{ settings.type_body_font.fallback_families }};
+          --color-base-100: {{ scheme.settings.color_white_base_100 }};
+          --color-content: {{ scheme.settings.color_white_base_content }};
+        {%- else -%}
+          --font-body-family: {{ settings.type_body_font.family }}, {{ settings.type_body_font.fallback_families }};
+          --color-base-100: {{ scheme.settings.color_base_100 }};
+          --color-content: {{ scheme.settings.color_content }};
+        {%- endif -%}
       }
 
       {{ settings.type_body_font | font_face: font_display: 'swap' }}
@@ -89,12 +98,23 @@
 
     <div class="w-screen bg-base-100 text-content z-[-1] relative">
       <div class="container mx-auto border-[2px] relative">
-        {%- if settings.dark_static_nose_background != blank -%}
+        {%- if settings.dark_static_nose_background != blank and template.name != 'product' -%}
           <div
             class="absolute inset-0 z-[-1] bg-repeat bg-center"
             style="
               background-image:url({{
                 settings.dark_static_nose_background
+                | image_url: width: 1440
+              }})
+            "
+          ></div>
+        {%- endif -%}
+        {%- if settings.light_static_nose_background != blank and template.name == 'product' -%}
+          <div
+            class="absolute inset-0 z-[-1] bg-repeat bg-center"
+            style="
+              background-image:url({{
+                settings.light_static_nose_background
                 | image_url: width: 1440
               }})
             "

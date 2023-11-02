@@ -37,7 +37,7 @@
 
 </script>
 
-<div class="w-full text-white font-bold overflow-x-hidden whitespace-nowrap">
+<div class="w-full text-content-base font-bold overflow-x-hidden whitespace-nowrap">
   {#each texts as text, index}
     {#if urls[index]}
       <a class="w-full py-3 inline-block text-center transition-[margin]" style="margin-left: {index === 0 ? -100 * active : 0}vw" href={urls[index]}>{text}</a>

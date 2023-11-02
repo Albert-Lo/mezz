@@ -69,8 +69,20 @@
           {
             "type": "color",
             "id": "color_content",
-            "label": "Cotent Color",
+            "label": "Cotent Color (White Background)",
             "default": "#FFFFFF"
+          },
+          {
+            "type": "color",
+            "id": "color_white_base_100",
+            "label": "Base Color (White Background)",
+            "default": "#f2f2f2"
+          },
+          {
+            "type": "color",
+            "id": "color_white_base_content",
+            "label": "Cotent Color (White Background)",
+            "default": "#222"
           },
           {
             "type": "color",
